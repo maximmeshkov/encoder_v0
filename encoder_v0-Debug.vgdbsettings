@@ -140,6 +140,9 @@
     </DynamicAnalysisSettings>
     <EndOfStackSymbol>_estack</EndOfStackSymbol>
     <TimestampProviderTicksPerSecond>0</TimestampProviderTicksPerSecond>
+    <TraceSettings>
+      <EnableTracing>true</EnableTracing>
+    </TraceSettings>
     <KeepConsoleAfterExit>false</KeepConsoleAfterExit>
     <CheckInterfaceDrivers>true</CheckInterfaceDrivers>
   </Debug>
