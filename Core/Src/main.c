@@ -72,7 +72,7 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 *///-------------------------------------------------------- -//-------------------------------------------------------- -//--------------------------------------------------------
-    int variable = 0;
+    
   /* USER CODE END 1 *///-------------------------------------------------------- -//-------------------------------------------------------- -//-------------------------------------------------------- -
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -113,13 +113,11 @@ int main(void)
       if (HAL_GPIO_ReadPin(BUTTON_Enc_GPIO_Port, BUTTON_Enc_Pin) == GPIO_PIN_SET)
       {
           HAL_GPIO_WritePin(LED_RGG_GPIO_Port, LED_RGG_Pin, GPIO_PIN_SET);
-          variable = 1;
           HAL_GPIO_WritePin(LED_RGR_GPIO_Port, LED_RGR_Pin, GPIO_PIN_RESET);
       }
       else
       {
           HAL_GPIO_WritePin(LED_RGR_GPIO_Port, LED_RGR_Pin, GPIO_PIN_SET);
-          variable = 0;
           HAL_GPIO_WritePin(LED_RGG_GPIO_Port, LED_RGG_Pin, GPIO_PIN_RESET);
       }
     /* USER CODE BEGIN 3 *///-------------------------------------------------------- -//-------------------------------------------------------- -//-------------------------------------------------------- -
